@@ -1,0 +1,68 @@
+body {
+    font: italic small-caps bold 16px/2 cursive;
+    margin: 0;
+    padding: 0;
+}
+/* Navigation bar styles */
+.first-row {
+    position: relative; /* Adds positioning context for absolute children */
+}
+.second-rowflex {
+    position: relative; /* Adds positioning context for absolute children */
+    display: flex; /* This activates Flexbox */
+    flex-direction: row; /* Defines the direction items are placed in the container (default is row) */
+    justify-content: space-between; /* Defines how items align horizontally in the container */
+    align-items: center; /* Defines how items align vertically in the container */
+    flex-wrap: wrap; /* Allows items to wrap onto multiple lines if needed */
+}
+.second-rowflexitem {
+    width: 33.333%; /* Sets width to one-third of the container's width */
+    padding-bottom: 33.333%; /* Padding-bottom ensures the item is a square */
+    background-size: cover; /* Ensures the background covers the square completely */
+    background-position: center; /* Centers the background image */
+    background-color: white;
+    position: relative; /* Enables absolute positioning of children relative to this container */
+  }
+.navlinks {
+    position: absolute;
+    top: 33px; 
+    left: 125px;
+    width: 50%;
+    color: white; 
+    background: rgba(0, 0, 0, 0.0); /* Full-transparent background, uncomment if needed */
+    z-index: 1;
+}
+.navlinks ul {
+    font: italic small-caps bold 16px/2 cursive;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+.navlinks li {
+    margin: 20px;
+    padding: 0;
+}
+.first-row img, .second-row img {
+    width: 100%;
+    display: block;
+}
+#ordernow {
+    background-color: rgba(255, 255, 255, 0.963); /* Set background color to white */
+    color: rgb(153, 0, 255); /* Set font color to lavender */
+    font: italic small-caps bold 16px/2 cursive;
+    padding: 25px 50px; /* Adjust padding as needed */
+    border: none; /* Remove default border */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadowed border effect */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    border-radius: 5px; /* Optional: rounded corners for aesthetics */
+    position: absolute; /* Position the button absolutely within the .container */
+    top: 75%; /* Center vertically in container */
+    left: 50%; /* Center horizontally in container */
+    transform: translate(-50%, -50%); /* Center the button */
+}
+#ordernow:hover {
+    background-color: #f9f9f9; /* Slightly change color on hover for visual feedback */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Enhance shadow on hover for depth effect */
+}
